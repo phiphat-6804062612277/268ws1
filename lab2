@@ -1,15 +1,30 @@
 #include <stdio.h>
-int main(){
-    int num1,num2,num3,num4;
-    scanf("%d %d %d %d",&num1,&num2,&num3,&num4);
-    // Condition Operator อันดับ 2
-    int max1 = (num1 > num2 ? num1: num2);
-    int min1 = (num1 < num2 ? num1: num2);
-    int max2 = (num3 > num4 ? num3: num4);
-    int min2 = (num3 < num4 ? num3: num4);
-    int mmax = (max1 < max2 ? max1: max2);
-    int mmin = (min1 > min2 ? min1: min2);
-    int scnum = (mmax > mmin ? mmax : mmin);
-    printf ("%d",scnum);
-    return 0;
+#include <math.h>
+int main (){
+    float a,b,c,d;
+    a=1, b=1, c=5, d=1;
+    printf("WS4 4.1\n");
+    printf("%f\n",(3*(a/5))+(1/b));
+    printf("%f\n",(3*a + (5 * b)) / (2+c));
+    printf("%f\n",(2.0/7.0)*((pow(4.0,3.0+c))- 5.0*d));
+    printf("%f\n",pow((2 + 8 * b)/a , 0.5));
+    printf("%f\n",cbrt(pow(b,2) - (4.0 * d)));
+
+    float a1,b1,c1,d1;
+    a1=9, b1=2, c1=0, d1=1;
+    printf("WS4 4.2\n");
+    printf("%f\n",(3*(a1/5))+(1/b1));
+    printf("%f\n",(3*a1 + (5 * b1)) / (2+c1));
+    printf("%f\n",(2.0/7.0)*((pow(4.0,3.0+c1))- 5.0*d1));
+    printf("%f\n",pow((2 + 8 * b1)/a1 , 0.5));
+    printf("%f\n",cbrt(pow(b1,2) - (4.0 * d1)));
+
+    float a2,b2,c2,d2;
+    a2=0, b2=3, c2=3, d2=3;
+    printf("WS4 4.3\n");
+    printf("%f\n",(3*(a2/5))+(1/b2));
+    printf("%f\n",(3*a2 + (5 * b2) / (2+c2)));
+    printf("%f\n",(2.0/7.0)*((pow(4.0,3.0+c2))- 5.0*d2));
+    printf("%f\n",pow((2 + 8 * b2)/a2 , 0.5));
+    printf("%f\n",cbrt(pow(b2,2) - (4.0 * d2)));
 }
