@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main(){
+    int num1,num2,num3,num4;
+    scanf("%d %d %d %d",&num1,&num2,&num3,&num4);
+    // Condition Operator อันดับ 2
+    int max1 = (num1 > num2 ? num1: num2);
+    int min1 = (num1 < num2 ? num1: num2);
+    int max2 = (num3 > num4 ? num3: num4);
+    int min2 = (num3 < num4 ? num3: num4);
+    int mmax = (max1 < max2 ? max1: max2);
+    int mmin = (min1 > min2 ? min1: min2);
+    int scnum = (mmax > mmin ? mmax : mmin);
+    printf ("%d",scnum);
+    return 0;
+}
